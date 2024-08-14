@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: blue;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+        a :visited{
+            color: rgb(0, 0, 0);
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: rgb(20, 196, 20);
+        }
+
+        .especial::after{
+            content:'⇐' ;
+        }
+        .especial::before{
+            content: '⇒';
+        }
+        .especial{
+            background-color: rgba(4, 0, 231, 0.336);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf">github</a></li>
+        <li><a href="https://www.youtube.com/watch?v=vMlrcOVr7po" class="especial">youtube</a></li>
+        <li><a href="https://www.youtube.com/watch?v=vMlrcOVr7po" class="especial">site</a></li>
+    </ul>
+
+</body>
+</html>
