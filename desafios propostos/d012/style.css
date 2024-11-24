@@ -6,9 +6,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
-*{
-    margin: 0%;
-    padding: 0%;}
 
 :root{
 
@@ -21,9 +18,15 @@
    
 }
 
+*{ 
+    margin: 0%;
+    padding: 0%;
+    font-size: 1em;
+}
+
 
 html, body{
-    min-height: 100%;
+    min-height: 100vh;
     background-color: var(--cor1);
     font-family: var(--fonte1);
     
@@ -73,20 +76,14 @@ section{
     font-size: 3.5vw;
 }
 
-section.normal{
-    
-    padding-left: 30px;
-    font-size: 3.5;
-    line-height: 2em;
-    
+section > p{
+    padding-bottom: 2em;
 }
 
-section > p{
+section.normal{
     
-    font-style: italic;
-    margin: 20px;
-    line-height: 2.5em;
-
+    background-color: white;
+    color: black;
 }
  
 section.imagem{
@@ -94,8 +91,9 @@ section.imagem{
     background-color: rgb(51, 51, 51);
     color: white;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
-    background-size:cover;
+    background-size: cover;
     background-attachment: fixed;
+   
    
 }
 
@@ -103,25 +101,21 @@ section.imagem > p {
     display:inline-block ;
     padding: 5px;
     background-color: rgba(169, 169, 169, 0.534);
-    background-position: right center;
+    text-shadow: 1px 1px 0px black;
+  
     }
 
 
-#joaninha{
+#img01{
     background-image: url(imagens/background001.jpg);
     background-position: right center;
+    
+    
 }
 
-#livro{
+#img02{
     background-image: url(imagens/background002.jpg);
     position: right center;
-
-}
-
-p.livro{
-    
-    background-color: rgba(169, 169, 169, 0.377);
-   
 }
 
 
