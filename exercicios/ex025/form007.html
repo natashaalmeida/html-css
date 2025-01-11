@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário </h1>
+
+<form action="cadastro.php">
+
+    <p>
+        <label for="iestado">Estado</label>
+        <select name="estado" id="iestado">
+
+<optgroup label="Região Norte">
+        <option value=""  selected > ---SELECIONE---</option>
+        <option value="Am"> Amazonas</option>
+        <option value="RR" >Roraima</option>
+        <option value="AC">Acre</option>
+        <option value="AP"> Amapá</option>
+</optgroup>
+
+<optgroup label="Região Sudeste">
+    <option value="RJ"> Rio de Janeiro</option>
+    <option value="Sp"> São Paulo</option>
+    <option value="MG"> Minas Gerais</option>
+</optgroup>
+
+<optgroup label="Região Nordeste">
+    <option value="CE"> Ceará</option>
+    <option value="MA"> Maranhão</option>
+    <option value="PE"> Pernambuco</option>
+</optgroup>
+        </select>
+    </p>
+
+<p>
+    <label for="iprof">Profissão </label>
+    <input type="text" name="prof" id="iprof" list="lstprof"> 
+    <datalist id="lstprof">
+        <option value="ENF">Enfermeiro</option>
+        <option value="CONT"> Contador </option>
+        <option value="DEV"> Densevolvedor </option>
+
+    </datalist>
+</p>
+
+
+</form>
+    
+</body>
+</html>
