@@ -12,22 +12,20 @@
         <p>
             <label for="in1">Número 1:</label>
             <input type="number" name="n1" id="in1"  min="0" max="50" required
-            oninput="isoma.innerHTML = Number(in1.value)+Number(in2+value)">
-
-            
+            oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
 
         </p>
 
         <p>
             <label for="in2">Número 2: </label>
             <input type="number" name="n2" id="in2" min="0" max="50" required
-            oninput="isoma.innerHTML = Number(in2.value)+Number(in2+value)">
-
+            oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+ 
         </p>
 
         <p>
-            <label for="isoma">soma</label>
-            <output id="isoma"> 0 </output> </output>
+            <label for="isoma"> Soma: </label>
+            <output id="isoma"> 0 </output>
 
         </p>
 
